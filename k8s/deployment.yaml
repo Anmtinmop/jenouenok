@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: okyoubane
+  name: heranok
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: okyoubane
+      app: heranok
   template:
     metadata:
       labels:
-        app: okyoubane
+        app: heranok
     spec:
       containers:
-      - image: okteto.dev/okhosttast:latest
-        name: okyoubane
+      - image: okteto.dev/heranok:latest
+        name: heranok
         ports:
         - containerPort: 8080
         env:
